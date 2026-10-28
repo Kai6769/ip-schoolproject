@@ -9,6 +9,12 @@ const file = path.join(__dirname, "visits.json");
 
 app.disable("x-powered-by");
 
+app.use(cors({
+  origin: "https://kai6769.github.io"
+}));app.use(cors({
+  origin: "https://kai6769.github.io"
+}));
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use((req, res, next) => {
